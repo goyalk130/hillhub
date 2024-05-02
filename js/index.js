@@ -30,22 +30,22 @@ function checkuser() {
 checkuser();
 
 async function logMovies() {
-  const url = 'https://ott-details.p.rapidapi.com/search?title=dilwale&page=1';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '742c2ccc64msh8accbf5133a1892p15c130jsn140eb97cf649',
-		'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
-	}
-};
+  const url = "https://ott-details.p.rapidapi.com/search?title=dilwale&page=1";
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "742c2ccc64msh8accbf5133a1892p15c130jsn140eb97cf649",
+      "X-RapidAPI-Host": "ott-details.p.rapidapi.com",
+    },
+  };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 addbutton.addEventListener("click", (e) => {
