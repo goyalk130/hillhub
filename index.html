@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ca68f789c.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer async src="./js/index.js"></script>
   </head>
   <body>
@@ -71,20 +75,19 @@
               </h1>
             </div>
           </div>
-          
+
           <div class="app-header-actions">
             <button class="user-profile">
-              <span>Matheo Peterson</span>
+              <span class="looged-in-user">Matheo Peterson</span>
               <span>
-                <img src="https://assets.codepen.io/285131/almeria-avatar.jpeg" />
+                <img
+                  src="https://assets.codepen.io/285131/almeria-avatar.jpeg"
+                />
               </span>
             </button>
             <div class="app-header-actions-buttons">
-              <button class="icon-button large">
-                <i class="ph-magnifying-glass"></i>
-              </button>
-              <button class="icon-button large">
-                <i class="ph-bell"></i>
+              <button id="logout" class="icon-button large">
+                <i class="fas fa-sign-out-alt"></i>
               </button>
             </div>
           </div>
@@ -93,7 +96,6 @@
               <i class="ph-list"></i>
             </button>
           </div>
-      
         </header>
         <div class="app-body">
           <div class="app-body-navigation">
@@ -137,7 +139,7 @@
               <div class="service-section-header">
                 <div class="search-field">
                   <i class="ph-magnifying-glass"></i>
-                  <input type="text" placeholder="Account number">
+                  <input type="text" placeholder="Account number" />
                 </div>
                 <div class="dropdown-field">
                   <select>
@@ -146,14 +148,10 @@
                   </select>
                   <i class="ph-caret-down"></i>
                 </div>
-                <button class="flat-button">
-                  Search
-                </button>
+                <button class="flat-button">Search</button>
               </div>
               <div class="mobile-only">
-                <button class="flat-button">
-                  Toggle search
-                </button>
+                <button class="flat-button">Toggle search</button>
               </div>
               <div class="tiles">
                 <article class="tile">
@@ -203,12 +201,13 @@
                 </article>
               </div>
               <div class="service-section-footer">
-                <p>Services are paid according to the current state of the currency and tariff.</p>
+                <p>
+                  Services are paid according to the current state of the
+                  currency and tariff.
+                </p>
               </div>
             </section>
-            
           </div>
-          
         </div>
       </div>
     </section>
